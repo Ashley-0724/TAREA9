@@ -20,8 +20,7 @@ public class Estudiante {
 
     /**
      *
-     * @return
-     */
+     * @return  */
     public String getNombre() {
         return nombre;
 }
@@ -33,6 +32,10 @@ public class Estudiante {
     public boolean estaAprobado() {
         return nota >= 7.0;
     }
-
+    
+      @Override
+    public String toString() {
+        return nombre + " - Nota: " + nota + " - " + (estaAprobado() ? "Aprobado" : "Reprobado");
+    }
 
 }
